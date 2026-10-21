@@ -1,0 +1,1 @@
+import{j as e}from"./r3f-CtMxCOgx.js";import{A as a}from"./index-Cb9oGmpQ.js";function d({title:s,text:t,action:r,icon:i}){return e.jsxs("div",{className:"empty-state",children:[e.jsx("div",{className:"empty-icon","aria-hidden":"true",children:i??e.jsx(a,{size:34,strokeWidth:1.2})}),e.jsx("h2",{children:s}),e.jsx("p",{children:t}),r]})}export{d as E};

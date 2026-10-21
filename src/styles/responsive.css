@@ -1,0 +1,24 @@
+@media (max-width: 991.98px) {
+  .nav-links { position: fixed; top: 64px; left: 0; right: 0; flex-direction: column; margin: 0; padding: 12px 16px 20px; background: var(--bg); border-bottom: 1px solid var(--line); transform: translateY(-120%); transition: transform .3s ease; visibility: hidden; max-height: calc(100vh - 64px); overflow-y: auto; }
+  .nav-links.is-open { transform: none; visibility: visible; }
+  .nav-links a { border-radius: 10px; padding: 12px 14px; }
+  .photo-modal { grid-template-columns: 1fr; overflow-y: auto; }
+  .pm-image img { max-height: 46vh; }
+  .star-panel { grid-template-columns: 1fr; text-align: left; }
+}
+@media (max-width: 767.98px) {
+  .page { padding: 28px 0 56px; }
+  .photographer-card { grid-template-columns: 1fr; }
+  .masonry { columns: 2 140px; column-gap: 10px; }
+  .masonry .photo-card { margin-bottom: 10px; }
+  .photo-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .museum-stage { height: calc(100svh - 64px); }
+  .museum-side { left: 10px; right: 10px; width: auto; bottom: 36px; transform: translateY(calc(100% + 60px)); transition: transform .3s ease; max-height: 55%; overflow-y: auto; }
+  .museum-side.is-open { transform: none; }
+  .museum-top { left: 10px; right: 10px; }
+  .museum-top .btn { padding: 6px 10px; font-size: .8rem; }
+  .museum-hint { display: none; }
+  .tour-caption { bottom: 18px; font-size: .95rem; border-radius: 16px; }
+  .hero-copy { padding-bottom: 48px; }
+}
+@media (max-width: 420px) { .masonry { columns: 1; } .exif { grid-template-columns: 1fr 1fr; } }

@@ -1,0 +1,27 @@
+.museum-page { position: relative; }
+.museum-stage { position: relative; height: calc(100vh - 64px); min-height: 520px; background: #0b0a09; overflow: hidden; }
+.museum-stage canvas { display: block; touch-action: none; }
+.museum-top { position: absolute; top: 14px; left: 14px; right: 14px; display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; pointer-events: none; }
+.museum-top > * { pointer-events: auto; }
+.view-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+.museum-side { position: absolute; left: 14px; bottom: 44px; width: 280px; display: grid; gap: 12px; }
+.m-panel { background: rgba(16, 14, 12, 0.78); backdrop-filter: blur(12px); border: 1px solid rgba(255, 244, 224, 0.16); border-radius: 14px; padding: 14px 16px; color: #f1ebdf; }
+.m-title { font-family: var(--font-body); font-size: .85rem; font-weight: 700; margin: 0 0 10px; color: #cfc6b5; }
+.m-desc { font-size: .82rem; color: #cfc6b5; margin: 10px 0 8px; }
+.m-panel .form-label { color: #cfc6b5; }
+.m-panel .seg { background: rgba(255,255,255,.06); border-color: rgba(255,244,224,.14); }
+.m-panel .seg button { color: #e5dccb; padding: 6px 4px; font-size: .74rem; }
+.m-panel .seg button.active { color: #1a1308; }
+.gallery-list { display: grid; gap: 6px; }
+.gallery-btn { display: flex; align-items: center; gap: 10px; background: transparent; border: 1px solid rgba(255,244,224,.14); color: #f1ebdf; border-radius: 10px; padding: 8px 12px; text-align: left; cursor: pointer; font-size: .88rem; font-weight: 600; transition: border-color .2s, background .2s; }
+.gallery-btn .dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,244,224,.3); }
+.gallery-btn:hover:not(:disabled) { border-color: var(--accent); }
+.gallery-btn.active { background: rgba(232,169,72,.14); border-color: var(--accent); }
+.gallery-btn.active .dot { background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+.gallery-btn:disabled { opacity: .55; cursor: default; }
+.tour-caption { position: absolute; left: 50%; bottom: 52px; transform: translateX(-50%); background: rgba(16,14,12,.82); border: 1px solid rgba(232,169,72,.5); color: #f6efe0; padding: 12px 22px; border-radius: 999px; max-width: min(640px, 92vw); text-align: center; font-family: var(--font-display); font-size: 1.1rem; backdrop-filter: blur(8px); }
+.museum-hint { position: absolute; right: 16px; bottom: 12px; margin: 0; font-size: .75rem; color: rgba(246,239,224,.7); pointer-events: none; text-align: right; }
+.museum-fallback .fallback-note { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); padding: 12px 16px; border-radius: 10px; color: var(--text-soft); }
+.gallery-tabs { display: flex; gap: 8px; margin: 18px 0; flex-wrap: wrap; }
+.gallery-tabs button { border: 1px solid var(--line); background: transparent; color: var(--text); border-radius: 999px; padding: 8px 18px; font-weight: 600; cursor: pointer; }
+.gallery-tabs button.active { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
